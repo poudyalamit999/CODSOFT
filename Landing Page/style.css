@@ -1,0 +1,288 @@
+*{
+  margin: 0;
+  padding: 0;
+font-family: initial;
+}
+html{
+  scroll-behavior: smooth;
+}
+#container{
+background-image: linear-gradient(rgba(0,0,0,0.5),#009688);   
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+}
+.logo{
+  width: 140px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+.bannertext{
+  text-align: center;
+  color: #fff;
+  padding-top: 180px;
+}
+.bannertext h1{
+  font-size: 150px;
+  font-style: oblique;
+}
+.bannertext p{
+  font-size: 50px;
+  font-style: italic;
+}
+.btn{
+  margin: 70px auto 0;
+}
+.btn a{
+  color: #000;
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  border: #fff 2px solid;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transition: color #000 0.5s;
+}
+.btn a span{
+width: 0%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: #fff;
+z-index: -1;
+transition: 0.5s;
+
+}
+.btn  :hover span{
+width: 100%;
+
+}
+#nav{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #009688;
+  z-index: 2;
+  transition: 0.5s;
+}
+#nav ul li{
+  list-style: none;
+  margin: 50px 20px;
+}
+#nav ul li a {
+ text-decoration: none;
+ color: #fff;
+}
+#menu{
+  width: 50px;
+  height: 50px;
+  background: #009688;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  z-index: 3;
+  cursor: pointer;
+}
+#menu img{
+  width: 20px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 770px) {
+  .bannertext h1{
+      font-size: 44px;
+  }
+      .btn a{
+display: block;
+margin: 20px auto;
+      }
+  
+}
+/*features*/
+#features{
+  width: 100%;
+  padding: 70px 0;
+}
+.texts{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.texts p{
+  margin: auto;
+  font-size: 20px;
+  color: #009688;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.texts p::after{
+  content: '';
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(#019587,#fff);
+  position: absolute;
+  top:-20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.texts h1{
+  font-size: 50px;
+
+}
+.fbox{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.feature{
+  flex-basis: 50%;
+}
+.fimg{
+  flex-basis: 50%;
+  margin: auto;
+}
+.fimg img{
+  width: 70%;
+  border-radius: 10px;
+}
+.feature h1{
+text-align: left;
+margin-bottom: 10px;
+font-weight: 100;
+color: #009688;
+}
+.fdec{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.ficon .fa{
+width: 50px;
+height: 50px;
+font-size: 30px;
+line-height: 50px;
+border-radius: 8px;
+color: #009688;
+border: 1px solid #009688;
+}
+.ftext p{
+padding: 0 20px;
+text-align: initial;
+}
+@media screen and (max-width: 770px){
+  .texts h1{
+      font-size: 35px;
+  
+  } 
+  .feature{
+      flex-basis: 100%;
+  }
+  .fimg{
+      flex-basis: 100%;
+      
+  }
+  .fimg img{
+      width: 100%;
+      
+  }
+}
+
+
+/*footer*/
+#footer{
+padding: 100px 0 20px;
+background: #efefef;
+position: relative;
+}
+.frow{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fleft , .fright{
+flex-basis: 45%;
+padding: 10px ;
+margin-bottom: 20px;
+}
+.fright{
+  text-align: right;
+}
+.fright .fa-solid{
+  color: #009688;
+}
+.frow  h1 {
+margin:10px 0;
+
+}
+.frow  p {
+line-height: 35px;
+
+}
+.fleft .fa , .fright .fa {
+  font-size: 20px;
+  color: #009688;
+  margin: 10px;
+}
+.fimg{
+  max-width: 370px;
+  opacity: 0.1;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%,-50%);
+}
+.slinks{
+  text-align: center;
+  
+}
+.slinks .fa-brands{
+height: 40px;
+width: 40px;
+font-size: 20px;
+line-height: 40px;
+border: 2px solid #009688;
+border-radius: 50%;
+margin: 40px 5px 0;
+color: #009688;
+cursor: pointer;
+margin-bottom: 0;
+
+transition: 0.5s;
+
+}
+.slinks .fa-brands:hover{
+  color: #fff;
+  background: #009688;
+}
+
+.slinks p{
+  font-size: 12px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 770px){
+  .fleft,.fright{
+      flex-basis: 100%;
+      font-size: 14px;
+  }
+  .fimg{
+      top: 25%;
+  }
+}
